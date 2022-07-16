@@ -16,35 +16,58 @@
 		referrerpolicy="origin" />
 
 		<!-- Font Awesome CSS -->
+		<!-- Version 6.1.1 uses fa-solid prefix for free users-->
 		<link rel="stylesheet" 
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-		crossorigin="anonymous" 
-		referrerpolicy="origin" />
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+		<!-- Lato Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 
 		<!-- Link to css folder -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="style.css">
 
 
 	</head>
 	<body>
 		<section class="header">
 			<nav>
-				<a href="Index.html"><img src="../PabliWebsite/css/images/pabliLogo.png"></a>
-				<div class="nav-links">
-
+				<a href="Index.html"><img src="/images/pabliLogo.png"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Features</a></li>
+						<li><a href="">FAQs</a></li>
+						<li><a href="">Download Pab.li</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
 				</div>
+				<i class="fa-solid fa-bars" onclick="showMenu()"></i>
 			</nav>
-			<nav class="nav-container">
-				<ul>  class="nav_list">
-					<li><a href="" class="nav_link">Home</a></li>
-					<li><a href="" class="nav_link">Features</a></li>
-					<li><a href="" class="nav_link">FAQs</a></li>
-					<li><a href="" class="nav_link">Download Pab.li</a></li>
-					<li><a href="" class="nav_link">Contact</a></li>
-				</ul>
-			</div> 
+			<div class="text-box">
+				<h1>JUMPSTARTING</h1>
+				<h2>Micro and Small Businesses to the Digital World</h2>
+				<p>Manage Better. Earn More.</p>
+				<h5>Download Now</h5>
+				<a href="" class="hero-btn">Google Play</a>
+			</div>
 		</section>
+
+		<!----- JavaScript for Toggle Menu ----->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+
+			function showMenu(){
+				navLinks.style.right = "0"
+			}
+
+			function hideMenu(){
+				navLinks.style.right="-200px"
+			}
+		</script>
+
 	</body>
 </html>
 	
