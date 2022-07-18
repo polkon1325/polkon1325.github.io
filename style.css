@@ -280,6 +280,11 @@ nav .fa-solid{
 		line-height: 36px !important;
 	}
 
+	.info .feat-header2{
+		position: relative;
+		top: -90px !important;
+	}
+
 	.info .para{
 		margin-left: 20px !important;
 		margin-right: 20px !important;
