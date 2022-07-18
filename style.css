@@ -11,6 +11,7 @@ html, body{
   	height: 100%;
   	margin: 0px;
   	padding: 0px;
+	/* Para hindi makita yung -200px na menu for mobile*/
 	overflow-x: hidden;
 }
 
@@ -26,6 +27,8 @@ html, body{
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+/* Navgation Bar */
 
 nav{
 	display: flex;
@@ -76,6 +79,8 @@ nav img{
 .nav-links ul li:hover::after{
 	width: 100%;
 }
+
+/* Front Page */
 
 .text-box{
 	width: 90%;
@@ -176,6 +181,8 @@ nav .fa-solid{
 	
 }
 
+/* For Mobile */
+
 @media(min-width: 912px){
 	nav img{
 		content: url(/images/pabliLogoBanner.png);
@@ -268,9 +275,292 @@ nav .fa-solid{
 	.nav-links ul{
 		padding: 30px;
 	}
+
+	.info .feat-header{
+		line-height: 36px !important;
+	}
+
+	.info .para{
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+	}
+
+	.info .para1{
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+		top: -120px !important;
+	}
+
+	.info .row{
+		flex-direction: column;
+	}
+	
+	.feature .row{
+		height: 650px !important;
+		flex-direction: column;
+		position: relative;
+		top: 10% !important;
+	}
+
+	.feature .row .feat1 .cp1{
+		width: 27%;
+	}
+	
+	.feature .row .feat2 .cp2{
+		width: 27%;
+		
+	}
+
+	/*.feature .row .feature-col{
+		align-items: center;
+		flex-direction: column;
+		column-count: 1;
+	}
+
+	.feature .row .feature-col .feat1{
+		width: 100% !important;
+		position:relative;
+		top: 0 !important;
+		right: 0 !important;
+		border: 3px solid black;
+	
+	}
+
+	.feature .row .feature-col .feat2{
+		width: 100% !important;
+		position: relative !important;
+		top: 0px !important;
+		left: 0px !important;
+		border: 3px solid black !important;
+	}*/
 }
 
-.feature{
-	width: 200px;
-	height: 400px;
+/* Info */
+
+.info{
+	width: 99%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
 }
+
+hr{
+	background-color:#f489bd; 
+	width: 2px; 
+	height: 40px; 
+	display: inline-block;
+	position: relative;
+	top: -70px;
+}
+
+.info .feat-header{
+	color: #313131;
+	font-size: 30px;
+	font-weight: 300px;
+	line-height: 22px;
+	padding: 10px;
+	position: relative;
+	top: -75px;
+	
+}
+
+.info .para{
+	color: #313131;
+	font-size: 16px;
+	font-weight: 250px;
+	line-height: 22px;
+	padding: 10px;
+	position: relative;
+	top: -100px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.info .feat-header1{
+	color: #313131;
+	font-size: 30px;
+	font-weight: 300px;
+	padding: 10px;
+	position: relative;
+	top: -95px;
+}
+
+.info .para1{
+	color: #313131;
+	font-size: 16px;
+	font-weight: px;
+	line-height: 22px;
+	padding: 10px;
+	position: relative;
+	top: -120px;
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.info .feat-header2{
+	position: relative;
+	top: -60px;
+}
+
+.info .row{
+	position: relative;
+	top: -100px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info .info-col{
+	flex-basis: 31%;
+	background: #969892;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.info .info-col .iceV-img{
+	height: 247px;
+	width: 200px;
+}
+
+.info .info-col .balutV-img{
+	height: 247px;
+	width: 290px;
+}
+
+.info .info-col:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+
+.info .h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px;
+}
+
+/* Feature */
+
+.feature {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	position: relative;
+	top: -150px;
+}
+
+.feature .hr1{
+	background-color:#313131; 
+	width: 100%; 
+	height: 5px; 
+	display: inline-block;
+	position: relative;
+	top: -15px;
+}
+
+.feature .row{
+	height: 550px;
+	position: relative;
+	top: -50px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.feature .row .feat{
+	flex-basis: 50%;
+}
+
+.feature .row .feat .cp1{
+	width: 55%;
+}
+
+.feature .row .feat .cp2{
+	width: 54%;
+}
+
+/* Call to Action */
+.cta{
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/images/contact1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.cta h1{
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.hero-btn1{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	font-weight: 700;
+	
+}
+
+.hero-btn1:hover{
+	border: 2px solid #fff;
+	background: #313131;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.hero-btn1::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #ff10f0;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.hero-btn1:hover:after{
+	width: 100%;
+}
+
+/* Footer */
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.icons .fa{
+	color: #f44336;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0;
+}
+
+
+
